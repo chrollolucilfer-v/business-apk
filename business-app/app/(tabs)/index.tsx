@@ -6,7 +6,7 @@ import { useRouter } from 'expo-router';
 export default function Home() {
   const router = useRouter();
   return (
-    <View style={{ flex: 1, padding: 20 }}>
+    <View style={{ flex: 1, padding: 21 }}>
       
       {/* Header */}
       <View style={{
