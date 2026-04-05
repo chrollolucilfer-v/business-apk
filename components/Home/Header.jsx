@@ -15,6 +15,8 @@ export default function Header() {
             padding:20,
             paddingTop:40,
             backgroundColor:Colors.PRIMARY,
+            borderBottomLeftRadius:20,
+            borderBottomRightRadius: 20,
         }}
     >
         <View
@@ -59,11 +61,30 @@ export default function Header() {
         </View>
 
 {/* Search Bar */}
-<View>
+<View
+style={
+    {
+        display:'flex',
+        flexDirection:'row',
+        gap:10,
+        alignItems:'center',
+        backgroundColor:'#fff',
+        padding:10,
+        marginVertical:10,
+        marginTop:15,
+        borderRadius:8,
 
-<EvilIcons name="search" size={24} color="black" />
+    }
+}
+>
+
+<EvilIcons name="search" size={24} color="Colors.PRIMARY"/>
 <TextInput
  placeholder='Search...'
+ style={{
+    fontFamily:'outfit',
+    fontSize: 16,
+ }}
 />
 
 
