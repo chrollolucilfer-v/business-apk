@@ -28,6 +28,7 @@ export const Colors = {
   },
   PRIMARY:'#7F57F1',
   GRAY:'#8F8F8F',
+  ICON_BG:'#F2F2F2',
 };
 
 export const Fonts = Platform.select({

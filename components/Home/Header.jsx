@@ -78,7 +78,7 @@ style={
 }
 >
 
-<EvilIcons name="search" size={24} color="Colors.PRIMARY"/>
+<EvilIcons name="search" size={24} color={Colors.PRIMARY}/>
 <TextInput
  placeholder='Search...'
  style={{

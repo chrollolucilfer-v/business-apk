@@ -1,10 +1,53 @@
 import { View, Text } from 'react-native'
-import React from 'react'
+import React, { use, useEffect, useState } from 'react'
+import {Colors} from './../../constants/theme';
+import CategoryItem from './CategoryItem';
+import { FlatList } from 'react-native';
+import { collection, query, getDocs } from "firebase/firestore";
+import { db } from "../../config/FirebaseConfig";
+
+
 
 export default function Category() {
+  const [categoryList, setCategoryList]=useState([]);
+  useEffect(() => {
+    GetCategoryList();
+  }, []);
+
+const GetCategoryList=async()=>{
+  setCategoryList([]); 
+  const q=query(collection(db,'Category'));
+  const querySnapshot=await getDocs(q);
+
+  querySnapshot.forEach((doc)=>{
+   console.log(doc.data());
+   setCategoryList((prev)=>[...prev, doc.data()])
+  })
+}
+
+
   return (
     <View>
-      <Text>Category</Text>
+      <View style={{padding:20, display:'flex', flexDirection:'row', justifyContent:'space-between', alignItems:'center', marginTop: 20}}>
+      <Text style ={{ marginTop: 20, fontSize: 18, fontFamily: 'outfit-bold',}}
+    >
+      Category
+      </Text>
+      <Text style={{color:Colors.PRIMARY, fontFamily:'outfit-medium'}}>View All</Text>
+      </View>
+      <FlatList
+        data={categoryList} 
+        
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
+        style={{marginLeft:20}}
+        renderItem={({ item,index }) => (
+          <CategoryItem category={item} key={index}
+          onCategoryPress={(category)=>console.log('category pressed', item.name)}
+          />
+        )}
+      />
     </View>
   )
 }
+                       
