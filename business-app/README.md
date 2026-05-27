@@ -1,50 +1,72 @@
-# Welcome to your Expo app 👋
+# Service Provider Marketplace Application
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern marketplace platform that connects customers with verified local service providers such as electricians, plumbers, tutors, gym trainers, technicians, and other professionals.
 
-## Get started
+The platform helps users discover, compare, and book services easily while giving service providers a digital space to manage their business, bookings, and earnings.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 📌 Features
 
-2. Start the app
+### Customer Features
+- OTP-based Authentication
+- Search Services by Category
+- Filter by Rating, Distance, and Price
+- View Service Provider Profiles
+- Book Appointments
+- Online Payment Integration
+- Ratings & Reviews
+- Booking History
 
-   ```bash
-   npx expo start
-   ```
+### Vendor Features
+- Business Registration
+- Add/Edit/Delete Service Listings
+- Manage Availability
+- Accept or Reject Bookings
+- Earnings Dashboard
+- Booking Management
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🚀 Tech Stack
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Frontend
+- React Native
+- Expo
+- Responsive UI Components
 
-## Get a fresh project
+### Backend
+- Node.js
+- Express.js
 
-When you're ready, run:
+### Database
+- MongoDB
+- PostgreSQL
+- Firebase Firestore
+
+### Authentication
+- Firebase Authentication
+- OTP Login System
+
+### Third-Party Integrations
+- Google Maps API
+- Razorpay Payment Gateway
+
+---
+
+## 🎯 Objectives
+
+- Create a centralized service marketplace
+- Simplify local service discovery
+- Improve transparency through reviews & ratings
+- Provide secure online booking and payments
+- Empower small businesses with digital visibility
+
+---
+
+## 🛠 Installation
+
+Clone the repository:
 
 ```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+git clone <repository-link>
